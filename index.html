@@ -14,6 +14,7 @@
     <div>
         <h1>Create your task </h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
+        <button id="btn-add"  class="btn" onclick="addTask()" >Add</button>
         <select id="categories-list" title="All">
         </select>
 
@@ -22,6 +23,7 @@
 
     <div>
         <h1>Create your category </h1>
+        <button id="btn-create"  class="btn" onclick="addCategory()" >Create</button>
         <input type="text" name="new-category" id="new-category" placeholder="* Add a new category">
     </div>
 
@@ -29,10 +31,12 @@
     <div>
         <h1>filter by category</h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
+        <button id="btn-filter"  class="btn" onclick="filterTasks()" >Filter</button>
         <select id="categories-list-filter" title="All">
         </select>
         <!-- DONE for filtering thing -->
         <div>
+            
             <input type="checkbox" name="done" id="done">
             <label for="done">Filter by done</label>
         </div>
