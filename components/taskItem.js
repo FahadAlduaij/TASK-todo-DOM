@@ -11,7 +11,7 @@ function tasksItemComponent(task) {
                   ${checked} 
                   onchange="taskChecked(${task.id}, this.checked)"
                 />
-                <div className="movie-details">
+                <div class="movies" className="movie-details">
                   <p class="item-category">${task.category}</p>
                   <p class="item-title">${task.title}</p>
                 </div>
