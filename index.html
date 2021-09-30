@@ -12,6 +12,12 @@
 <body>
 <div class="container">
     <div class="tasks">
+        <h1>Create your category </h1>
+        <input class="class-select" type="text" name="new-category" id="new-category" placeholder="* Add a new category">
+        <button id="btn-create"  class="btn" onclick="addCategory()">Create</button>
+
+    </div>
+    <div class="tasks">
         <h1>Create your task </h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
         <select class="class-select" id="categories-list" title="All">
@@ -24,12 +30,6 @@
     </div>
     
 
-    <div class="tasks">
-        <h1>Create your category </h1>
-        <input class="class-select" type="text" name="new-category" id="new-category" placeholder="* Add a new category">
-        <button id="btn-create"  class="btn" onclick="addCategory()">Create</button>
-
-    </div>
 
     <!-- FILTERING DIV -->
     
