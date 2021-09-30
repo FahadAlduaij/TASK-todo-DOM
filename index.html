@@ -11,33 +11,34 @@
 
 <body>
 
-    <div>
+    <div class="your-task">
         <h1>Create your task </h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
-        <button id="btn-add"  class="btn" onclick="addTask()" >Add</button>
         <select id="categories-list" title="All">
         </select>
-
+        
         <input type="text" name="new-task" id="new-task" placeholder="* Add a new task">
+        <button id="btn-add"  class="btn" onclick="addTask()" >Add</button>
     </div>
 
-    <div>
+    <div >
         <h1>Create your category </h1>
-        <button id="btn-create"  class="btn" onclick="addCategory()" >Create</button>
         <input type="text" name="new-category" id="new-category" placeholder="* Add a new category">
+        <button id="btn-create"  class="btn" onclick="addCategory()">Create</button>
     </div>
 
     <!-- FILTERING DIV -->
     <div>
         <h1>filter by category</h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
-        <button id="btn-filter"  class="btn" onclick="filterTasks()" >Filter</button>
+        <button id="btn-all"  class="btn"  onclick="filterAll()" >All</button>
+        <button id="btn-filter"  class="btn"  onclick="filterTasks()">Filter</button>
         <select id="categories-list-filter" title="All">
         </select>
         <!-- DONE for filtering thing -->
         <div>
             
-            <input type="checkbox" name="done" id="done">
+            <input type="checkbox" name="done" id="done" >
             <label for="done">Filter by done</label>
         </div>
     </div>
